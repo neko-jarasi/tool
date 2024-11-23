@@ -14,9 +14,9 @@ let random =  Math.floor(Math.random()*max)+1;
 kirokunum=kirokunum+1
 kiroku[kirokunum]=random
 
-document.getElementById('text').innerHTML= random
+document.getElementById('text').innerText= random
 
-document.getElementById('memo').innerHTML=kiroku.join('<br>')
+document.getElementById('memo').innerText=kiroku.join('\n')
 }} else if (islist) {
 
 let ruret = document.getElementById('ruretlist').value
@@ -30,9 +30,9 @@ let ruret = document.getElementById('ruretlist').value
   kirokunum = kirokunum + 1
   kiroku[kirokunum] = randlist
  
-  document.getElementById('text').innerHTML= randlist
+  document.getElementById('text').innerText= randlist
   
-  document.getElementById('memo').innerHTML=kiroku.join('<br>')
+  document.getElementById('memo').innerText=kiroku.join('\n')
   
   }else if (isketa) {
     let max=parseInt(document.getElementById('usernum').value-1)
@@ -45,14 +45,14 @@ let ruret = document.getElementById('ruretlist').value
     kirokunum = kirokunum + 1
     kiroku[kirokunum] = randketa
     
-    document.getElementById('text').innerHTML= randketa
+    document.getElementById('text').innerText= randketa
     
-    document.getElementById('memo').innerHTML=kiroku.join('<br>')
+    document.getElementById('memo').innerText=kiroku.join('\n')
   }
 };
 
 document.getElementById('reset').onclick = function(){
   kiroku=[]
   kirokunum=-1
-  document.getElementById('memo').innerHTML=kiroku.join('<br>')
+  document.getElementById('memo').innerText=kiroku.join('\n')
 }
