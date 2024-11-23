@@ -1,0 +1,20 @@
+.counter{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 0px;
+}
+.minus{
+  width: 25px;
+  height: 25px;
+  background-color: blue;
+}
+.plus{
+  width: 25px;
+  height: 25px;
+  background-color: red;
+}
+.delete{
+  margin-left: 40px
+}
