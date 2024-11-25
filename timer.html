@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイマーとか</title>
+
+    <style>
+        #settime{
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>タイマーとか</h1>
+    <p>時間を測ったり数えたりできます<br>カップラーメンなどに使ってください</p>
+    <p id="display" style="font-size: 50px;">00:00:00</p>
+    <p>直接入力</p>
+    <label><input id="userh" type="number">時間</label>
+    <label><input id="userm" type="number">分</label>
+    <label><input id="users" type="number">秒</label>
+     <input value="0" id="settime" type="range" min="0" max="43200">
+    <br><br>
+    <button id="start">スタート</button>
+    
+    <script src="timer.js"></script>
+</body>
+</html>
